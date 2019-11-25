@@ -1,6 +1,5 @@
         stage('build') {
-            steps {
-                sh 'id'
-            }
+            sh "mkdir -p test"
+            sh "pwd"
         }
     
