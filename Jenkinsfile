@@ -8,6 +8,6 @@
         stage "Checkout"
         
             checkout([$class: 'GitSCM', branches: [[name: '*/master']],
-            userRemoteConfigs: [[url: 'https://github.com/vamsimakkena1/cicd.git'], [credentialsId: 'vamsi']]])
+            userRemoteConfigs: [[url: 'https://github.com/vamsimakkena1/cicd1.git']]])
         }
     
