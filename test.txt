@@ -1,1 +1,5 @@
 hjgskjsjld;lksa.cmBXCHJbXJZN
+
+http://vamsimakkena1c.mylabserver.com:8081/
+    
+http://vamsimakkena1d.mylabserver.com:8080/
