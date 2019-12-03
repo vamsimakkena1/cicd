@@ -1,5 +1,10 @@
 hjgskjsjld;lksa.cmBXCHJbXJZN
 
-http://vamsimakkena1c.mylabserver.com:8081/
+http://vamsimakkena1c.mylabserver.com:8081/ --- artifactory
     
-http://vamsimakkena1d.mylabserver.com:8080/
+http://vamsimakkena1d.mylabserver.com:8080/ -- jenkins
+
+
+    
+http://vamsimakkena1d.mylabserver.com:8080/  --- sonar
+
