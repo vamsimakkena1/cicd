@@ -7,7 +7,7 @@
             
         stage "Build"
 
-             sh "/usr/local/apache-maven-3.2.2/bin/mvn clean install"
+             sh "/usr/bin/apache-maven-3.6.3/bin/mvn clean install"
          
          }
         
