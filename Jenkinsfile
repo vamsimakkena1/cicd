@@ -41,5 +41,9 @@
                  		} 
             		 ] 
          	}''' 
+		
+		def buildInfo = server.upload spec: uploadSpec
+		
+		server.publishBuildInfo buildInfo
  
   		}
