@@ -27,7 +27,7 @@
     			}
 	stage "ZIP artifacts"
 		
-		sh "zip -r dateutils.zip target"
+		sh "zip -r dateutils.${BUILD_NUMBER}.zip target"
 		
 	stage "Artifactory Upload"
 		
