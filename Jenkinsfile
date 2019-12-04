@@ -15,9 +15,8 @@
 		
     		withSonarQubeEnv('localsonar') { 
 		
-		sh " . /var/vamsi/sonar-scanner.properties"
 			
-      		sh "${scannerHome}/bin/sonar-scanner"
+      		sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey="test" -Dsonar.source="src/" -Dsonar.java.binaries="target/" "
 			
     			}
   		}
