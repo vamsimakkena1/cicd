@@ -37,7 +37,7 @@
              	"files": [ 
                  		{ 
                      		"pattern": "*.zip", 
-                     		"target": "my-maven-local", 
+                     		"target": "my-maven-local" 
                  		} 
             		 ] 
          	}''' 
