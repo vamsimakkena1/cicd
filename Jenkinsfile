@@ -21,4 +21,8 @@
       		sh "${scannerHome}/bin/sonar-scanner -Dproject.settings=/var/vamsi/sonar-scanner.properties "
 			
     			}
+	stage "ZIP artifacts"
+		
+		sh "zip dateutils.jar.zip target/dateutils.jar"
+		
   		}
