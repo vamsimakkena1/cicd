@@ -1,6 +1,8 @@
         node{
 		
 	deleteDir()
+		
+	def server = Artifactory.server "localartifactory"
         
 	stage "Checkout"
         
@@ -27,4 +29,17 @@
 		
 		sh "zip -r dateutils.zip target"
 		
+	stage "Artifactory Upload"
+		
+		def uploadSpec =
+			
+		'''{ 
+             	"files": [ 
+                 		{ 
+                     		"pattern": "*.zip", 
+                     		"target": "my-maven-local", 
+                 		} 
+            		 ] 
+         	}''' 
+ 
   		}
