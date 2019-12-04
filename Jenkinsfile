@@ -23,6 +23,6 @@
     			}
 	stage "ZIP artifacts"
 		
-		sh "zip dateutils.zip target"
+		sh "zip -r dateutils.zip target"
 		
   		}
