@@ -46,7 +46,7 @@
 		
 		server.publishBuildInfo buildInfo
 		
-	Stage "Download from Artifactory"
+	stage "Download from Artifactory"
 		def downloadSpec = 
              
 		'''{ 
