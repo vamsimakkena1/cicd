@@ -16,7 +16,7 @@
     		withSonarQubeEnv('localsonar') { 
 		
 			
-      		sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey="test" -Dsonar.sources="src" -Dsonar.java.binaries="target" "
+      		sh "${scannerHome}/bin/sonar-scanner "
 			
     			}
   		}
