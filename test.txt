@@ -6,5 +6,9 @@ http://vamsimakkena1d.mylabserver.com:8080/ -- jenkins
 
 
     
-http://vamsimakkena1d.mylabserver.com:8080/  --- sonar
+http://vamsimakkena2c.mylabserver.com:8080/  --- sonar
+
+
+tooken - 2f66eacf863e44c1ceb2adf38cd50afb872dc1c4
+test -  8dde20a27b74a7db841cc1859a87290ac3d4ab42
 
