@@ -36,8 +36,8 @@
 		'''{ 
              	"files": [ 
                  		{ 
-                     		"pattern": "*.zip", 
-                     		"target": "my-maven-local" 
+                     			"pattern": "dateutils.${BUILD_NUMBER}.zip", 
+                     			"target": "my-maven-local" 
                  		} 
             		 ] 
          	}''' 
@@ -45,5 +45,21 @@
 		def buildInfo = server.upload spec: uploadSpec
 		
 		server.publishBuildInfo buildInfo
+		
+	Stage "Download from Artifactory"
+		def downloadSpec = 
+             
+		'''{ 
+             	"files": [ 
+                 		{ 
+                     			"pattern": "my-maven-local/dateutils.${BUILD_NUMBER}.zip", 
+                     			"target": "dateutils.zip"
+                 		} 
+            		 ] 
+        	}''' 
+ 
+ 
+     		//def buildInfo1 = server.download spec: downloadSpec 
+
  
   		}
