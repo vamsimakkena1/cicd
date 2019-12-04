@@ -2,11 +2,11 @@ hjgskjsjld;lksa.cmBXCHJbXJZN
 
 http://vamsimakkena1c.mylabserver.com:8081/ --- artifactory
     
-http://vamsimakkena1d.mylabserver.com:8080/ -- jenkins
+http://vamsimakkena2c.mylabserver.com:8080/ -- jenkins
 
 
     
-http://vamsimakkena2c.mylabserver.com:8080/  --- sonar
+http://vamsimakkena2c.mylabserver.com:8082/  --- sonar
 
 
 tooken - 2f66eacf863e44c1ceb2adf38cd50afb872dc1c4
