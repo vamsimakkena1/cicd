@@ -1,4 +1,8 @@
         node{
+		
+	stage " Clean Workspace "
+		
+		sh " rm -rf $WORKSPACE "
         
 	stage "Checkout"
         
