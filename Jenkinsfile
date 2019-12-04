@@ -1,8 +1,6 @@
         node{
 		
-	stage " Clean Workspace "
-		
-		sh " rm -rf $WORKSPACE "
+	deleteDir()
         
 	stage "Checkout"
         
