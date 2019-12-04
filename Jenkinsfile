@@ -14,6 +14,8 @@
 		def scannerHome = tool 'sonar';
 		
     		withSonarQubeEnv('localsonar') { 
+		
+		sh " . /var/vamsi/sonar-scanner.properties"
 			
       		sh "${scannerHome}/bin/sonar-scanner"
 			
