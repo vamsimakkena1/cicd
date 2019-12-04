@@ -29,6 +29,10 @@
 		
 		sh "zip -r dateutils.${BUILD_NUMBER}.zip target"
 		
+	stage "Permission"
+		
+		input "Upload to artifactory?"
+		
 	stage "Artifactory Upload"
 		
 		def uploadSpec =
