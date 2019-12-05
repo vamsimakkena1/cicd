@@ -71,7 +71,6 @@
  
   		}
 
-		def server = Artifactory.server "localartifactory"
 
 		def scm(){
 		checkout([$class: 'GitSCM', branches: [[name: '*/master']],
@@ -104,7 +103,7 @@
 		}
 
 		def artup(){
-	
+			
 		def uploadSpec =
 			
 		'''{ 
@@ -115,6 +114,8 @@
                  		} 
             		 ] 
          	}''' 
+			
+		def server = Artifactory.server "localartifactory"
 		
 		def buildInfo = server.upload spec: uploadSpec
 		
@@ -134,7 +135,8 @@
                  		} 
             		 ] 
         	}''' 
- 
+ 		
+		def server = Artifactory.server "localartifactory"
  
      		def buildInfo1 = server.download spec: downloadSpec
 		
