@@ -62,10 +62,10 @@
      		def buildInfo1 = server.download spec: downloadSpec
 		
 		server.publishBuildInfo buildInfo1
-		
+ 
+  		}
+
 		def scm(){
 		checkout([$class: 'GitSCM', branches: [[name: '*/master']],
         	userRemoteConfigs: [[url: 'https://github.com/vamsimakkena1/cicd1.git']]])
 		}
- 
-  		}
