@@ -11,10 +11,10 @@
             	scm()
         stage "Build"
 		
-		def mavenhome = tool 'maven';
+		//def mavenhome = tool 'maven';
 
-		sh "${mavenhome}/bin/mvn clean install"
-		
+		//sh "${mavenhome}/bin/mvn clean install"
+		sonar()
 	stage "Sonar Analysis"
 		
 		def scannerHome = tool 'sonar';
@@ -68,4 +68,11 @@
 		def scm(){
 		checkout([$class: 'GitSCM', branches: [[name: '*/master']],
         	userRemoteConfigs: [[url: 'https://github.com/vamsimakkena1/cicd1.git']]])
+		}
+
+		def sonar(){
+	
+		def mavenhome = tool 'maven';
+
+		sh "${mavenhome}/bin/mvn clean install"
 		}
