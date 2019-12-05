@@ -105,7 +105,7 @@
 
 		def artup(){
 	
-			def uploadSpec =
+		def uploadSpec =
 			
 		'''{ 
              	"files": [ 
