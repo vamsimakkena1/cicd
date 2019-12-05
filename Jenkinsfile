@@ -34,22 +34,22 @@
 		
 	stage "Artifactory Upload"
 		
-		//def uploadSpec =
+		def uploadSpec =
 			
-		//'''{ 
-             	//"files": [ 
-                 //		{ 
-                  //   			"pattern": "dateutils.${BUILD_NUMBER}.zip", 
-                   // 			"target": "my-maven-local" 
-                 //		} 
-            	//	 ] 
-         	//}''' 
+		'''{ 
+             	"files": [ 
+                		{ 
+                     			"pattern": "dateutils.${BUILD_NUMBER}.zip", 
+                    			"target": "my-maven-local" 
+                 		} 
+            		 ] 
+         	}''' 
 		
-		//def buildInfo = server.upload spec: uploadSpec
+		def buildInfo = server.upload spec: uploadSpec
 		
-		//server.publishBuildInfo buildInfo
+		server.publishBuildInfo buildInfo
 		
-		artup()
+		//artup()
 		
 	stage "Download from Artifactory"
 		
