@@ -38,7 +38,7 @@
 	
 		def mavenhome = tool 'maven';
 
-		sh "${mavenhome}/bin/mvn clean install"
+		sh "${mavenhome}/bin/mvn clean package"
 		}
 
 		def sonar(){
