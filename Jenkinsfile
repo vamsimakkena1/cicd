@@ -40,7 +40,7 @@
         
         withAWS(credentials: 'laaws', region: 'us-east-1') {
             
-            s3Upload(bucket:"lavamsi", workingDir:'.', includePathPattern:'**.*');
+            s3Upload(bucket:"lavamsi", workingDir:'.', includePathPattern:'*');
             
         }
     }
