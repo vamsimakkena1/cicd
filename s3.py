@@ -7,8 +7,8 @@ with open('input.json') as json_file:
 abc = data['s3bucket']
 print(abc)
 
-ACCESS_KEY='AKIA3V6MLQUR5FIQFQGK'
-SECRET_KEY='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'
+ACCESS_KEY=''
+SECRET_KEY=''
 
 session = Session(aws_access_key_id=ACCESS_KEY,
                   aws_secret_access_key=SECRET_KEY)
