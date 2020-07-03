@@ -42,7 +42,7 @@
             
             //s3Upload(bucket:"lavamsi", workingDir:'.', includePathPattern:'*');
             
-        }
+        //}
     }
   	}
 
