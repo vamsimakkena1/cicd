@@ -1,4 +1,4 @@
-        node("Slave2"){
+        node("Slave"){
             
 		
 	deleteDir()
