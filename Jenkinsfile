@@ -12,10 +12,10 @@
 		
 		build()
     }	
-	stage("Sonar Analysis"){
+	//stage("Sonar Analysis"){
 		
-		sonar()
-	}
+	//	sonar()
+	//}
 	//stage('Publish test results') {
 	    
       //junit '**/test-results/test/*.xml'
@@ -25,22 +25,22 @@
 
 	//	zip()
 		
-	stage("Artifactory Upload"){
+	//stage("Artifactory Upload"){
 		
-		artup()
+	//	artup()
 		//buildNumber: '${BUILD_NUMBER}'
-	}
+	//}
 	
-	stage("Download from Artifactory"){
+	//stage("Download from Artifactory"){
 		
-		artdown()
+	//	artdown()
 		//buildNumber: '${BUILD_NUMBER}'
-	}
-    stage("Upload to s3"){
+	//}
+    //stage("Upload to s3"){
         
-        withAWS(credentials: 'laaws', region: 'us-east-1') {
+       // withAWS(credentials: 'laaws', region: 'us-east-1') {
             
-            s3Upload(bucket:"lavamsi", workingDir:'.', includePathPattern:'*');
+            //s3Upload(bucket:"lavamsi", workingDir:'.', includePathPattern:'*');
             
         }
     }
@@ -55,7 +55,7 @@
 
 		def build(){
 	
-		def mavenhome = tool 'maven';
+		def mavenhome = tool 'm2_3.6.3';
         
 		sh "${mavenhome}/bin/mvn clean package -DskipTests=true"
 
